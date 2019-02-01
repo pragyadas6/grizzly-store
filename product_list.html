@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Grizzly Store Admin Product List</title>
+<style>
+	
+	/*.header a {
+  		float: left;
+  		color: black;
+  		text-align: center;
+  		padding: 12px;
+  		text-decoration: none;
+  		font-size: 18px; 
+  		line-height: 25px;
+  		border-radius: 4px;
+	}
+	.header {
+  		overflow: hidden;
+  		background-color: #f1f1f1;
+	}
+	.header a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+	.header-right {
+  		float: right;
+  		background-color: black;
+  		color: white;
+	}
+	.div2{
+		margin-right: 300px;
+		
+	}*/
+	.butstyle{
+		border-radius: 25px 25px 25px 25px;
+		backgroud-color: #B0B0B0;
+		color: #505050;
+		border: none;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 300;
+		padding: 5px 25px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.textstyle{
+		box-sizing: border-box;
+		border-radius: 25px 25px 25px 25px;
+		color: #A0A0A0;
+		border: none;
+  		background-color: #C0C0C0;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 300;
+		padding: 5px 25px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#t1{
+		border-color:white white white white;
+ 		border-left: 5px solid white;
+  		border-right: 5px solid white;
+ 		border-top:5px solid white;
+  		border-bottom:5px solid white
+	}
+	#srch{
+		top:2px;
+		left:2px;
+	}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<div class="container">
+	
+
+  	<ul class="nav nav-tabs">
+    	<li class="active pillstyle"><a data-toggle="tab" href="#products">PRODUCTS</a></li>
+    	<li><a data-toggle="tab" href="#vendors">VENDORS</a></li>
+  	</ul>
+
+  	<div class="tab-content">
+    	<div id="products" class="tab-pane fade in active">
+    	</br>
+
+    	<div>
+    	
+    		<button class="butstyle" type="button" data-toggle="dropdown">Choose Action
+  			<span class="caret"></span></button>
+
+      		<input class="textstyle" type="text" name="search" placeholder="Category Name" >
+      		<span id="srch" class="glyphicon glyphicon-search" ></span>
+      		
+      		<button class="butstyle" type="button" data-toggle="dropdown">Sort by
+  			<span class="caret"></span></button>
+  	
+  	
+  			<input type="button" class="butstyle" href="#addproduct" name="addproduct" value="Add Product" text-align="center" padding="50px" style="float:right"></input>
+  		
+    	</div>
+    
+    	</br>
+    	</br>
+    	</br>
+    
+   		<div>
+    	<table class="table table-bordered table-hover" id="t1">
+    		<tr>
+    			<td >Product List</td>
+    			<td>Brand</td>
+    			<td>Category</td>
+    			<td>Rating</td>
+    			<td></td>
+    		</tr>
+    		<tr>
+    			<td ><input type="checkbox" name="Trimmer"></input>Trimmer</td>
+    			<td>Phillips</td>
+    			<td>Personal Care</td>
+    			<td>4.7</td>
+    			<td><button class="butstyle" href="#">View</button> <button class="butstyle" href="#">Block</button> <button class="butstyle" href="#">Remove</button></td>
+    		</tr>
+    		<tr>
+    			<td><input type="checkbox" name="Shaver"></input>Shaver</td>
+    			<td>Braun</td>
+    			<td>Personal Care</td>
+    			<td>4.8</td>
+    			<td><button class="butstyle" href="#">View</button> <button class="butstyle" href="#">Block</button> <button class="butstyle" href="#">Remove</button></td>
+    		</tr>
+    		<tr>
+    			<td><input type="checkbox" name="MacbookPro"></input>MacbookPro</td>
+    			<td>Apple</td>
+    			<td>Laptops</td>
+    			<td>4.9</td>
+    			<td><button class="butstyle" href="#">View</button> <button class="butstyle" href="#">Block</button> <button class="butstyle" href="#">Remove</button></td>
+    		</tr>
+    		<tr>
+    			<td><input type="checkbox" name="iMac27" ></input>iMac 27"</td>
+    			<td>Apple</td>
+    			<td>Laptops</td>
+    			<td>4.6</td>
+    			<td><button class="butstyle" href="#">View</button> <button class="butstyle" href="#">Block</button> <button class="butstyle" href="#">Remove</button></td>
+    		</tr>
+    		<tr>
+    			<td><input type="checkbox" name="MicronPens" ></input>Micron Pens</td>
+    			<td>Sakura Pigma</td>
+    			<td>Art Spplies</td>
+    			<td>4.1</td>
+    			<td><button class="butstyle" href="#">View</button> <button class="butstyle" href="#">Block</button> <button class="butstyle" href="#">Remove</button></td>
+    		</tr>
+    		<tr>
+    			<td><input type="checkbox" name="PaintMarkers" ></input>Paint Markers</td>
+    			<td>Copic</td>
+    			<td>Art Supplies</td>
+    			<td>4.2</td>
+    			<td><button class="butstyle" href="#">View</button> <button class="butstyle" href="#">Block</button> <button class="butstyle" href="#">Remove</button></td>
+    		</tr>
+    	</table>
+    	</div>
+    </div>
+    <div id="vendors" class="tab-pane fade">
+      <h3>VENDORS</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+	
+	
+</body>
+</html>
